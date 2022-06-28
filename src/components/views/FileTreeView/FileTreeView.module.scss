@@ -1,0 +1,47 @@
+/* file tree lists */
+
+@import "../../../styles/colors";
+
+.file-tree {
+  text-align: left;
+  color: $color-primary;
+  background-color: $color-black;
+  padding: 2rem 1rem;
+
+  ul {
+    font-family: courier;
+    margin: 0;
+    padding-left: 3rem;
+    list-style: none;
+    line-height: 1.25;
+    position: relative;
+    overflow: hidden;
+  }
+
+  li {
+    // background: #fff;
+    position: relative;
+
+    &:not(:last-child) > ul::before {
+      content: "\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1em;
+    }
+
+    &::before {
+      content: "\251C\2500\2500\0020";
+    }
+
+    &:last-child::before {
+      content: "\2514\2500\2500\0020";
+    }
+  }
+
+  > ul {
+    margin: 0;
+    padding: 0;
+  }
+}

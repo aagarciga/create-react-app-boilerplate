@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// This project supports CSS Modules alongside regular stylesheets 
+// using the [name].module.css file naming convention. 
+// CSS Modules allows the scoping of CSS by automatically creating 
+// a unique classname of the format [filename]\_[classname]\_\_[hash].
+
+import './index.scss';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
