@@ -1,0 +1,39 @@
+@import "/src/themes/alex-dark-theme";
+
+.button {
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 700;
+
+  &.primary {
+    color: $theme-dark-text;
+    background-color: $color-primary;
+    &.dark {
+      color: $color-background;
+    }
+  }
+  &.secondary {
+    color: $color-background;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    &.dark {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      background-color: transparent;
+    }
+  }
+  &.small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  &.medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  &.large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

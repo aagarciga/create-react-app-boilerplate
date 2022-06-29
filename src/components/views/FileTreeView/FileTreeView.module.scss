@@ -1,11 +1,11 @@
 /* file tree lists */
 
-@import "../../../styles/colors";
+@import "/src/themes/alex-dark-theme";
 
 .file-tree {
   text-align: left;
   color: $color-primary;
-  background-color: $color-black;
+  background-color: $color-background;
   padding: 2rem 1rem;
 
   ul {
