@@ -1,11 +1,50 @@
 [
-  { "id": "1", "title": "Task 1", "state": "TASK_INBOX" },
-  { "id": "2", "title": "Task 2", "state": "TASK_INBOX" },
-  { "id": "3", "title": "Task 3", "state": "TASK_INBOX" },
-  { "id": "4", "title": "Task 4", "state": "TASK_INBOX" },
-  { "id": "5", "title": "Task 5", "state": "TASK_INBOX" },
-  { "id": "6", "title": "Task 6", "state": "TASK_INBOX" },
+  {
+    "id": "1",
+    "title": "yarn create react-app origincw.web.ui --template typescript",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "2",
+    "title": "yarn add -D @storybook/preset-scss css-loader sass sass-loader style-loader",
+    "state": "TASK_INBOX"
+  },
+  { "id": "3", "title": " yarn set version stable", "state": "TASK_INBOX" },
+  {
+    "id": "4",
+    "title": "yarn add -D babel-loader @babel/core @babel/preset-env",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "5",
+    "title": "yarn add --dev @storybook/addon-a11y ",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "6",
+    "title": "yarn add @reduxjs/toolkit react-redux",
+    "state": "TASK_INBOX"
+  },
   { "id": "7", "title": "Task 7", "state": "TASK_INBOX" },
   { "id": "8", "title": "Task 8", "state": "TASK_INBOX" },
-  { "id": "9", "title": "Task 9", "state": "TASK_INBOX" }
+  {
+    "id": "9",
+    "title": "yarn add msw msw-storybook-addon -D",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "10",
+    "title": "npx msw init ./public",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "11",
+    "title": "yarn add --dev @storybook/test-runner",
+    "state": "TASK_INBOX"
+  },
+  {
+    "id": "12",
+    "title": "yarn add @babel/preset-typescript -D",
+    "state": "TASK_INBOX"
+  }
 ]

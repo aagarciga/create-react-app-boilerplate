@@ -2,6 +2,9 @@ import React from 'react';
 import './App.scss';
 import Button from './components/customs/Button';
 import FileTreeView from './components/views/FileTreeView';
+import InboxScreen from './screens/InboxScreen';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Button dark>Read Docs</Button>
         </div>
       </div>
+      <Provider store={store}>
+        <InboxScreen />
+      </Provider>
     </div>
   );
 }

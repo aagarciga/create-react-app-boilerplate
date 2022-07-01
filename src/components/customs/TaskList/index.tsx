@@ -1,17 +1,16 @@
 import React from 'react';
 
 import Task from '../Task';
-import { useDispatch, useSelector } from 'react-redux';
 
 import './styles.scss';
 import styles from './TaskList.module.scss';
 
-import { RootState } from '../../../store';
 import { updateTaskState } from '../../../store/slices/tasksSlice';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 const TaskList = () => {
 
-    const tasks = useSelector((state: RootState) => {
+    const tasks = useAppSelector((state) => {
         const tasksInOrder = [
             ...state.taskbox.tasks.filter((t: Task) => t.state === 'TASK_PINNED'),
             ...state.taskbox.tasks.filter((t: Task) => t.state !== 'TASK_PINNED')
@@ -23,9 +22,9 @@ const TaskList = () => {
         return filteredTasks;
     });
 
-    const { status } = useSelector((state: RootState) => state.taskbox);
+    const { status } = useAppSelector((state) => state.taskbox);
 
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     const pinTask = (value: string) => {
         dispatch(updateTaskState({ id: value, state: 'TASK_PINNED' }));
