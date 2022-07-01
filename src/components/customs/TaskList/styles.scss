@@ -1,3 +1,5 @@
+@import "/src/themes/alex-dark-theme";
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -72,7 +74,7 @@
   & [class*=" icon-"] {
     font-size: 48px;
     line-height: 56px;
-    color: #2cc5d2;
+    color: $theme-color-primary;
     display: block;
   }
   .title-message {

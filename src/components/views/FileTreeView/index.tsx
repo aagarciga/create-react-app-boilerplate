@@ -37,6 +37,11 @@ const FileTreeView = ({ }: Props) => {
                 <li>models</li>
                 <li>screens</li>
                 <li>services</li>
+                <li>store
+                    <ul>
+                        <li>slices</li>
+                    </ul>
+                </li>
                 <li>stories</li>
                 <li>styles</li>
                 <li>themes</li>

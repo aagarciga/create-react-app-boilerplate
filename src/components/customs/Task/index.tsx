@@ -2,11 +2,12 @@ import React from 'react'
 import './styles.scss'
 import styles from './Task.module.scss'
 
+type TaskState = 'TASK_INBOX' | 'TASK_PINNED' | 'TASK_ARCHIVED';
 
 type Task = {
     id: string,
     title: string,
-    state: 'TASK_INBOX' | 'TASK_PINNED' | 'TASK_ARCHIVED'
+    state: TaskState
 }
 
 type TaskProps = {
