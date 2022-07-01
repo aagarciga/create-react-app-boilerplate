@@ -1,11 +1,23 @@
 import React from 'react'
-import './button.scss'
+import './styles.scss'
 import styles from './Button.module.scss'
 
 type ButtonProps = {
+    /**
+     * Is this the principal call to action on the page?
+     */
     primary?: boolean;
+    /**
+     * Is this being shown in a dark theme?
+     */
     dark?: boolean;
+    /**
+     * How large should the button be?
+     */
     size?: 'small' | 'medium' | 'large';
+    /**
+     * Button contents
+     */
     children: React.ReactNode;
 }
 
