@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
 import './styles.scss'
 import styles from './Button.module.scss'
 
@@ -27,7 +27,7 @@ const Button = ({
     size = 'medium',
     children,
     ...props
-}: ButtonProps) => {
+}: ButtonProps & DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>) => {
     const mode = primary ? 'primary' : 'secondary';
     const darkClass = dark ? 'dark' : '';
     return (

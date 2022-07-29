@@ -31,7 +31,10 @@ Default.args = {
 export const Primary = Template.bind({});
 Primary.args = {
     primary: true,
-    children: 'Button'
+    children: 'Button',
+    onClick: (event) => {
+        console.log("Button clicked", event);
+    }
 }
 
 // export const Dark = Template.bind({});
